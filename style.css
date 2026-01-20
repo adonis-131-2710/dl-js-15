@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "verdana";
+    background: rgb(249, 230, 255);
+}
+
+.container {
+    width: 100%;
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgb(45, 28, 58);
+    text-shadow: 0 2px 3px rgba(46, 45, 86, 0.601);
+}
+
+.item {
+    width: 90%;
+    max-width: 500px;
+    padding:  20px 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: inset 0 2px 3px  rgba(27, 51, 46, 0.486);
+    border-radius: 8px;
+}
+
+.question {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: rgb(61, 45, 92);
+    text-shadow: 0 2px 3px rgba(36, 66, 60, 0.397);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer {
+    padding: 0 15px;
+    color:  rgb(84, 52, 111);
+    font-size: 15px;
+    font-weight: 500;
+    max-height: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.item.active .answer {
+    max-height: 100px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.icon {
+    transition: all 0.3s ease;
+}
+
+i {
+    font-size: 24px;
+    height: 25px;
+    color: rgb(104, 72, 129);
+}
